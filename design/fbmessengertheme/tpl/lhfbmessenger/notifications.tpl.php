@@ -17,7 +17,7 @@
         </thead>
         <?php foreach ($items as $item) : ?>
             <tr>
-                <td><a href="<?php echo erLhcoreClassDesign::baseurl('fbmessenger/editnotification')?>/<?php echo $item->id?>" ><?php echo htmlspecialchars($item->name)?></a></td>
+                <td><a ng-non-bindable href="<?php echo erLhcoreClassDesign::baseurl('fbmessenger/editnotification')?>/<?php echo $item->id?>" ><?php echo htmlspecialchars($item->name)?></a></td>
                 <td nowrap>
                     <div class="btn-group" role="group" aria-label="..." style="width:60px;">
                         <a class="btn btn-secondary btn-xs" href="<?php echo erLhcoreClassDesign::baseurl('fbmessenger/editnotification')?>/<?php echo $item->id?>" ><i class="material-icons mr-0">&#xE254;</i></a>

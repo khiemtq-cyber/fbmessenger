@@ -1,6 +1,6 @@
 <div class="form-group">
     <label><?php echo erTranslationClassLhTranslation::getInstance()->getTranslation('module/fbmessenger','Name');?></label>
-    <input type="text" maxlength="250" class="form-control" name="name" value="<?php echo htmlspecialchars($item->name)?>" />
+    <input ng-non-bindable type="text" maxlength="250" class="form-control" name="name" value="<?php echo htmlspecialchars($item->name)?>" />
 </div>
 
 <div class="row">
@@ -97,7 +97,7 @@
             <div class="col-6">
                 <div class="form-group">
                     <label><?php echo erTranslationClassLhTranslation::getInstance()->getTranslation('module/fbmessenger','Message');?></label>
-                    <textarea name="message" id="message-text" class="form-control"><?php echo htmlspecialchars($item->message)?></textarea>
+                    <textarea ng-non-bindable name="message" id="message-text" class="form-control"><?php echo htmlspecialchars($item->message)?></textarea>
                 </div>
             </div>
             <div class="col-6">
